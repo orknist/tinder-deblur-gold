@@ -128,7 +128,7 @@ async function unblur() {
         if(teaser.user.photos == null) continue;
         if(teaser.user.photos.length == 0) continue;
 		const teaserImage = teaser.user.photos[0].url;
-        const teaserGrandParentEl = teaserEls[i].parentElement?.parentElement;
+        let teaserGrandParentEl = teaserEls[i].parentElement?.parentElement;
 
 		if (teaserImage.includes('unknown')) continue;
 
